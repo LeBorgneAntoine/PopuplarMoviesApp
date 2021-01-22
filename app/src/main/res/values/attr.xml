@@ -3,5 +3,4 @@
 
     <attr name="colorRatingStarActive" format="reference" />
     <attr name="colorRatingStarNormal" format="reference" />
-
 </resources>
