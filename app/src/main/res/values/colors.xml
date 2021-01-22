@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Commune theme -->
+    <color name="primary_color">#d3d3d3</color>
+
+    <!-- Light theme -->
+    <color name="background_color_light">#ffffff</color>
+    <color name="secondary_color_light">#E3E3E3</color>
+    <color name="text_primary_color_light">#FF000000</color>
+    <color name="popup_background_color_light">#d3d3d3</color>
+    <color name="rating_star_active_light">#303030</color>
+    <color name="rating_star_normal_light">#8E8E8E</color>
+
+
+    <!-- Dark theme -->
+    <color name="background_color_dark">#1d1d1d</color>
+    <color name="secondary_color_dark">#1d1d1d</color>
+    <color name="text_primary_color_dark">#FFFFFFFF</color>
+    <color name="rating_star_active_dark">#8E8E8E</color>
+    <color name="rating_star_normal_dark">#303030</color>
+    <color name="popup_background_color_dark">#141414</color>
+
+</resources>

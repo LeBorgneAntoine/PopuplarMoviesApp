@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="movie_container_border_radius">20dp</dimen>
+    <dimen name="movie_poster_width">170dp</dimen>
+    <dimen name="movie_poster_height">250dp</dimen>
+    <dimen name="movie_poster_border_radius">10dp</dimen>
+    <dimen name="more_info_container_radius">30dp</dimen>
+    <dimen name="movie_title_font_size">25sp</dimen>
+    <dimen name="movie_director_font_size">15sp</dimen>
+    <dimen name="movie_time_font_size">15sp</dimen>
+    <dimen name="text_spacer_size">20dp</dimen>
+
+</resources>

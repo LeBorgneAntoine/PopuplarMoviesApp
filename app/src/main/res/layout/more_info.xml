@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:elevation="20dp"
+    android:screenOrientation="portrait"
+    android:background="@drawable/more_info_container">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+
+            android:id="@+id/linearLayout"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:gravity="clip_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/more_poster_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/more_info_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fadingEdge="horizontal"
+                android:fadingEdgeLength="200dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="TITLE"
+                android:textSize="@dimen/movie_title_font_size"
+                app:layout_constraintBottom_toTopOf="@+id/more_info_director"
+                app:layout_constraintEnd_toStartOf="@+id/more_poster_image"
+                app:layout_constraintHorizontal_bias="0.353"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.551" />
+
+            <TextView
+                android:id="@+id/more_info_director"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="36dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="Director"
+                android:textSize="@dimen/movie_director_font_size"
+                app:layout_constraintBottom_toTopOf="@+id/more_info_time"
+                app:layout_constraintEnd_toStartOf="@+id/more_poster_image"
+                app:layout_constraintHorizontal_bias="0.322"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/more_info_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="Time"
+                app:layout_constraintBottom_toTopOf="@+id/more_info_synopsis"
+                app:layout_constraintEnd_toStartOf="@+id/more_poster_image"
+                app:layout_constraintHorizontal_bias="0.285"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/more_info_release"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="Release"
+                app:layout_constraintBottom_toTopOf="@+id/more_info_synopsis"
+                app:layout_constraintEnd_toStartOf="@+id/more_poster_image"
+                app:layout_constraintHorizontal_bias="0.285"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:numStars="5"
+                android:rating="5"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:stepSize=".01"
+                android:theme="@style/RatingBar" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/more_poster_image"
+            android:layout_width="215dp"
+            android:layout_height="308dp"
+            android:layout_margin="20dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/poster_image"
+            android:scaleType="matrix"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/more_info_synopsis"
+            android:layout_width="308dp"
+            android:layout_height="220dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Synopsis..."
+            android:textSize="@dimen/movie_director_font_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/more_poster_image"
+            app:layout_constraintVertical_bias="0.819" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_light"
+            android:text="Synopsis: "
+            android:textSize="@dimen/movie_director_font_size"
+            app:layout_constraintBottom_toTopOf="@+id/more_info_synopsis"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/more_info_synopsis"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.744" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
