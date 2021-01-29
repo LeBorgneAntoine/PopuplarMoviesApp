@@ -23,7 +23,7 @@
   - xml 
   - gradle
  ### External dependencies
-  - [Glide]()
+  - [Glide](https://mvnrepository.com/artifact/com.github.bumptech.glide/glide)
  ### External API:
   - [the movie db](https://www.themoviedb.org/documentation/api)
   
