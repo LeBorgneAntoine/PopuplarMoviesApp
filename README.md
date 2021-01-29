@@ -26,6 +26,9 @@
   - [Glide]()
  ### External API:
   - [the movie db](https://www.themoviedb.org/documentation/api)
+  
+ ### Mockup:
+  - ![mockup](https://github.com/LeBorgneAntoine/movies-popular/blob/master/Mockup.png)
 # Author
-  #### Antoine LE BORGNE
+  #### [Antoine LE BORGNE](https://github.com/LeBorgneAntoine)
   
